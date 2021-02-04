@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Optimizely</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300&display=swap" rel="stylesheet">
+    <style>
+        #login{
+            width: 68%;
+            height:520px;
+            margin: auto;
+           
+            font-family: 'Nunito Sans', sans-serif;
+        }
+        #login>p{
+            font-size: 30px;
+            margin-bottom: 10px;
+        }
+       .a_under{
+           text-decoration: none;
+       }
+        #login_options{
+            width: 100%;
+            display: grid;
+            gap: .5%;
+          
+            grid-template: "login imgbox";
+                              
+
+        }
+        #login_options>div:nth-child(1){
+            background: rgba(249,249,249,255);
+            padding: 6%;
+            padding-top: 7%;
+            width:89.2%;
+            height:450px;
+            border: 1px solid lightgrey;
+            display: flex;
+            flex-flow: column;
+           grid-area: login;
+        }
+        #limgbox{
+            display: grid;
+            grid-template: "img1 img1"
+                            "img2 img3";
+            grid-area: imgbox;
+            gap: 0.7%;
+            padding: 1%;
+            border: 1px solid lightgrey;
+        }
+        #login_options input[type=email],input[type=password]{
+            width: 98%;
+            height: 25px;
+            border: 1px solid rgb(216, 216, 216);
+            border-radius: 5px;
+            margin-top: 5px;
+            margin-bottom: 10px;
+        }
+        #login_options input[type=submit]{
+            margin-top: 15%;
+            width: 100%;
+            height: 30px;
+            border: 1px solid rgba(64,105,255,255);;
+            border-radius: 5px;
+            background: rgba(64,105,255,255);
+            color: white;
+        }
+        #login_options>div>form>a>p{
+            margin-top: 18px;
+            font-size: 13px;
+            color: black;
+        }
+        #login_options>div>a{
+            color: rgb(0, 89, 255);
+            text-align: center;
+        }
+        #limg1{
+            grid-area: img1;
+
+            height: 270px;
+            margin-bottom: 3.5%;
+        }
+        #limg2{
+            grid-area: img2;
+
+        }
+        #limg3{
+            grid-area: img3;
+
+        }
+       
+        #login #bottom{
+            margin-top: 22px;
+            font-size: 14px;
+            text-align: center;
+            color: rgb(0, 89, 255);
+        }
+        #login_options>div input[type="checkbox"]+label{
+          cursor: pointer;
+          font-size: 14px;
+        }
+       
+    </style>
+</head>
+<body>
+    <div id="login">
+        <p>Log in to Optimizely</p>
+        <div id="login_options">
+            <div>
+                <form>
+                    <label for="mail">Email</label>
+                    <input type="email" id="mail">
+                    <label for="pass">Password</label>
+                    <input type="password" id="pass">
+                    <a href="" class="a_under"><p>Need help logging in?</p></a>
+                    <input type="checkbox" id="keep_loggedin">
+                    <label for="keep_loggedin">Keep me logged in</label>
+                    <input type="submit" value="Log in">
+                </form>
+                <a href="" class="a_under"><p>Log in using SSO</p></a>
+            </div>
+            <div id="limgbox">
+                <div id="limg1"><a href=""><img src="https://cdn.optimizely.com/img/5935064/4d2835b208ca4ad7a871cd77ffaf7d7c.png" alt=""></a></div>
+                <div id="limg2"><a href=""><img src="https://cdn.optimizely.com/img/5935064/8b1032256fbd402b8d1d7473eb5e96de.png" alt=""></a></div>
+                <div id="limg3"><a href=""><img src="https://cdn.optimizely.com/img/5935064/a33b7085d492435c871fb54a3786f658.png" alt=""></a></div>
+            </div>
+       </div>
+        <a href="" class="a_under"><p id="bottom">Terms of Service | Privacy Policy</p></a>
+    </div>
+</body>
+</html>
