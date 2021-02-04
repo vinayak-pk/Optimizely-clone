@@ -3,7 +3,7 @@
 
     </head>
     <style>
-        body > div:nth-child(1) {
+        body > div {
             width:86%;
             background-color: rgb(247, 242, 242);
             height: 1200px;
@@ -11,7 +11,7 @@
             padding-left: 7%;
             padding-right: 7%;
             text-align: center;
-           
+            margin: 10% 0%;          
 
         }
         body > div:nth-child(1) > div:nth-child(1) {
@@ -51,9 +51,9 @@
             margin-top: 10%
             
         }
-         body > div:nth-child(1) > div:nth-child(4)> img {
-            width: 100px;
-            object-fit: fill;
+          .img {
+            width: 200px;
+           
            
        }
        #vertical_box {
@@ -63,12 +63,18 @@
         padding: 1%;
        }
        #atlassian > div:nth-child(3)> div {
-           width: 250%;
+           width: 200%;
            background-color: white;      
            margin: 5%;
            padding: 2%;
            height: 170px;
             }
+        .buttons {
+            display: flex;
+            flex-direction: row;
+            margin: 5%;
+            
+        }
     </style>
     <body>
         <div>
@@ -97,11 +103,28 @@
             <div>
                 <div><p>We had one experiment drive a 95% lift in adoption of a new feature, and that was the catalyst for the Growth team.</p></div>
                 <div><h4>LAUREN SCHUMAN <br>SENIOR DIRECTOR OF PRODUCT INSIGHTS & GROWTH </h4></div>
-                <div><img src="https://images.ctfassets.net/zw48pl1isxmc/8iNXXhg2vVyFmT7Oi793O/5e968c9d7287a48f6ca4efae59cb7e25/mailchimp-new-logo.png" alt=""></div>
+                <div><img class="img" src="https://images.ctfassets.net/zw48pl1isxmc/8iNXXhg2vVyFmT7Oi793O/5e968c9d7287a48f6ca4efae59cb7e25/mailchimp-new-logo.png" alt=""></div>
             </div>
-        </div>    
+        </div>  
         <div>
-
+            <div class="buttons">
+                <div><button>B2B</button></div>
+                <div><button>Media</button></div>
+                <div><button>Retail</button></div>
+                <div><button>Automative</button></div>
+                <div><button>Travel</button></div>
+                <div><button>Non-Profit</button></div>
+                <div><button>Government</button></div>
+            </div>
+            <div class="buttons">
+                <div><button>Real Estate</button></div>
+                <div><button>Financial Service</button></div>
+                <div><button>Game</button></div>
+                <div><button>Consumer Goods</button></div>
+            </div>
+          
+    
+    
         </div>
         
     </body>
