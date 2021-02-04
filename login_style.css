@@ -92,3 +92,18 @@
   cursor: pointer;
   font-size: 14px;
 }
+@media only screen and (max-width: 600px) {
+    #login_options{
+        grid-template: "login"
+                      "imgbox";
+    }
+  
+} 
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 768px) {
+    #login_options{
+        grid-template: "login"
+                      "imgbox";
+    }
+} 
