@@ -1,7 +1,51 @@
 #mainbody{
-    width: 99%;
+    width: 100%;
     margin: auto;
+    background: rgb(243, 243, 255);
 }
 .font{
     font-family: 'Roboto', sans-serif;
+}
+.font>h1{
+    font-size: 3vw;
+}
+
+#top{
+    width: 90%;
+    margin: auto;
+    border: 1px solid red;
+}
+   
+.flexbox_ep{
+    display: flex;
+    flex-direction: row;
+}
+#topimg{
+   flex-grow: 0.5;
+}
+.right_text{
+    text-align: left;
+    width: 40.6%;
+    flex-wrap: nowrap;
+    line-height: 1.8;
+    border: 1px solid black;
+}
+.right_text>p{
+color: grey;
+font-size: 17px;
+}
+.blackb{
+    width: 35%;
+    height: 50px;
+    background: black;
+    color: white;
+    border-radius: 3px;
+    border: 1px solid black;
+    margin-top: 5%;
+}
+.right_text>.italic{
+    font-style: italic;
+    font-size: 16px;
+    font-weight: 700;
+    color: rgba(22, 22, 22, 0.747);
 }
