@@ -9,16 +9,14 @@
 .font>h1{
     font-size: 3vw;
 }
-
-#top{
+.align-center{
     width: 90%;
     margin: auto;
-    border: 1px solid red;
 }
    
 .flexbox_ep{
     display: flex;
-    -ms-flex-direction: row;
+    flex-direction: row;
     flex-flow: row;
 }
 #topimg{
@@ -29,11 +27,13 @@
     width: 41%;
     flex-wrap: nowrap;
     line-height: 1.8;
-    border: 1px solid black;
 }
 .a_clean{
     color: rgb(0, 65, 245);
     text-decoration: none;
+}
+.increase-gap{
+    margin-top: 10%;
 }
 .pstyle{
 color: grey;
@@ -56,13 +56,8 @@ line-height: 1.8;
     color: rgba(22, 22, 22, 0.747);
 }
 .h2_head{
-    margin-top: 10%;
     font-size: 36px;
     text-align: center;
-}
-#top-mid-box{
-    width: 90%;
-    margin: auto;
 }
 #top-mid-box>div{
     width:95%;
@@ -76,4 +71,18 @@ line-height: 1.8;
 }
 #top-mid-box img{
     width: 10%;
+}
+
+
+#top-lower-box>div{
+    flex-grow: 1;
+}
+#top-lower-box>div p{
+margin-top: 30%;
+}
+#top-lower-text{
+  width: 28%;
+}
+#middlebody>div>div>img{
+      width: 100%;
 }
