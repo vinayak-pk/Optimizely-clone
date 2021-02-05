@@ -83,6 +83,7 @@ margin-top: 30%;
 #top-lower-text{
   width: 28%;
 }
+
 #middlebody>div>div>img{
       width: 100%;
       cursor: default;
@@ -121,7 +122,12 @@ margin-top: 30%;
 .animate-arrow:hover {
     padding-right: 34px;
 }
-#bottomimg{
-    width: 150%;
+#bottom-box{
+    margin-top: 20%;
 }
-
+#bottomtext{
+    width: 37%;
+}
+#bottomimg{
+        margin-left:10%;;
+}
