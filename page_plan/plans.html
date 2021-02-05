@@ -29,7 +29,7 @@
         body > div:nth-child(2) > div {
 
             width: 45%;
-            height: 600px;
+            height: 500px;
             margin: 2%;
         }
         body > div:nth-child(2) > p{
@@ -85,9 +85,50 @@
          }
          body > div:nth-child(4) > div:nth-child(2) > div {
              width: 20%;
+            
          }
+         #grey_img {
+            
+         -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+           filter: grayscale(100%);
+
+         }
+         
          body > div:nth-child(4) > div:nth-child(1) {
              font-size: 25px;
+         }
+         body > div:nth-child(6) {
+             display: flex;
+             flex-direction: row;
+             justify-content: center ;
+             align-items: center;
+         }
+         body > div:nth-child(6) > div {
+             margin:  3% 10%;
+         }
+         .top_table{
+             display: flex;
+             flex-direction: row;
+             gap: 2%;
+             
+         }
+         .top_table > div:nth-child(n) {
+             padding: 2%;
+         }
+         .top_table > div:nth-child(1) {
+             width: 45%;
+             height: 150px;
+         }
+         .top_table > div:nth-child(2) {
+            width: 15%;
+         }
+         .top_table > div:nth-child(3) {
+            width: 15%;
+            background-color: rgb(198, 236, 141);
+         }
+         .top_table > div:nth-child(4) {
+             background-color: rgb(216, 218, 214);
+             width: 15%;
          }
     </style>
     <body>
@@ -108,7 +149,7 @@
             
         </div>
         <div>
-             <div><h2>The world's leading brands trust Optimizely </h2><br></div>
+             <div><h2> Core features for both products</h2><br></div>
              <div>
                 <div><img src="https://images.ctfassets.net/zw48pl1isxmc/5vRK6WNan3nzVFGoFJADjj/1d4019a68985655c449b846a8671dd9d/icon-stats-engine.svg" alt=""><h3>Stats Engine</h3></div>
                 <div><img src="https://images.ctfassets.net/zw48pl1isxmc/1zmiPnllUSImf6SkGSXkpU/ad791a6e865db7ae9d501747529ed07a/icon-circle.svg" alt=""><h3>Enterprise Security</h3></div>
@@ -119,16 +160,65 @@
             
         </div>
         <div>
-             <div>Core features for both products</div>
+             <div>The world's leading brands trust Optimizely</div>
              <div>
-                <div><img src="https://images.ctfassets.net/zw48pl1isxmc/2oEV864ATGlV4OIx2nY3r9/8722dd03c6d47f383dbbf6b021d07c8d/logo-microsoft.svg" alt=""></div>
-                <div><img src="https://images.ctfassets.net/zw48pl1isxmc/4NH0Gl48DYABwqp37vZKoV/22817ad261bae34a7b1dafe0d81585b1/logo-ibm.svg" alt=""></div>
-                <div><img src="https://images.ctfassets.net/zw48pl1isxmc/32fGQXdrbzieoiWgK1uHf2/6a56a38592e2b1bc161d36a0da81d04f/logo-hp.svg" alt=""></div>
-                <div><img src="https://images.ctfassets.net/zw48pl1isxmc/2myX5mlVLcXRUZgf7EyKs/a149fe283b7c402186979c392624f2b6/logo-ebay.svg" alt=""></div>
-                <div><img src="https://images.ctfassets.net/zw48pl1isxmc/3XhYyMePdu9rfJau3pjegF/3035e6f3cbb311fc635cdaa80ead59c7/logo-atlassian.svg" alt=""></div>
+                <div><img id="grey_img" src="https://images.ctfassets.net/zw48pl1isxmc/2oEV864ATGlV4OIx2nY3r9/8722dd03c6d47f383dbbf6b021d07c8d/logo-microsoft.svg" alt=""></div>
+                <div><img id="grey_img" src="https://images.ctfassets.net/zw48pl1isxmc/4NH0Gl48DYABwqp37vZKoV/22817ad261bae34a7b1dafe0d81585b1/logo-ibm.svg" alt=""></div>
+                <div><img id="grey_img" src="https://images.ctfassets.net/zw48pl1isxmc/32fGQXdrbzieoiWgK1uHf2/6a56a38592e2b1bc161d36a0da81d04f/logo-hp.svg" alt=""></div>
+                <div><img id="grey_img" src="https://images.ctfassets.net/zw48pl1isxmc/2myX5mlVLcXRUZgf7EyKs/a149fe283b7c402186979c392624f2b6/logo-ebay.svg" alt=""></div>
+                <div><img id="grey_img" src="https://images.ctfassets.net/zw48pl1isxmc/3XhYyMePdu9rfJau3pjegF/3035e6f3cbb311fc635cdaa80ead59c7/logo-atlassian.svg" alt=""></div>
             </div>
         </div>    
         <div><h1>Plans comparison</h1>
-            <h1>simple, scale as needed across teams.</h1></div>
+            <h1>simple, scale as needed across teams.</h1>
+        </div>
+        <div> 
+            <div><h1>FULL STACK</h1></div>
+            <div><h1>WEB</h1></div>
+        </div>
+        <div class="top_table">
+            <div></div>
+            <div><h2>Grow</h2><p>Get started with the most performant experimentation solution.</p></div>
+            <div><h2>Accelerate</h2><p>Increase experiment velocity and test types to drive impact.</p></div>
+            <div><h2>Scale</h2><p>Take your experimentation program to the next level.</p></div>
+        </div>
+         <div>   
+            <div>
+                <div><h4>Create and Deliver Experiences</h4></div>
+            </div>
+            <div>
+                <div><h4>Experiment Types</h4></div>
+            </div>
+            <div>
+                <div><h4>Implementation</h4></div>
+            </div>
+            <div>
+                <div><h4>Advanced Personalization</h4></div>
+            </div>
+            <div>
+                <div><h4>Results</h4></div>
+            </div>
+            <div>
+                <div><h4>Targeting</h4></div>
+            </div>
+            <div>
+                <div><h4>Optimizely Program Management</h4></div>
+            </div>
+            <div>
+                <div><h4>Security and Administartive COntrol</h4></div>
+            </div>
+            <div>
+                <div><h4>Performance</h4></div>
+            </div>
+            <div>
+                <div><h4>API</h4></div>
+            </div>
+            <div>
+                <div><h4>Support</h4></div>
+            </div>
+            <div>
+                <div><h4>Salesforce</h4></div>
+            </div>
+        </div>    
     </body>
 </html>
