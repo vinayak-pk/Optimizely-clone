@@ -85,4 +85,18 @@ margin-top: 30%;
 }
 #middlebody>div>div>img{
       width: 100%;
+      cursor: default;
+}
+#middlebody>div>div h4{
+    font-size: 17px;
+}
+#middlebody>div>div{
+    flex-grow: 1;
+    gap: 2%;
+    cursor: pointer;
+}
+.arrow{
+    color: black;
+    font-size: 12px;
+    letter-spacing: 1px;
 }
