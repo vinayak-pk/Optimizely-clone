@@ -1,7 +1,7 @@
 #mainbody{
     width: 100%;
     margin: auto;
-    background: rgb(243, 243, 255);
+    background: rgba(240,242,243,255);
 }
 .font{
     font-family: 'Roboto', sans-serif;
@@ -138,6 +138,7 @@ margin-top: 30%;
 #form-box{
     width: 52%;
     margin: auto;
+    margin-top: 10%;
 }
 #form-box>div>form input,select{
     border: none;
@@ -148,10 +149,11 @@ margin-top: 30%;
 }
 
 .grid-box{
+    margin-top: 8%;
     display: grid;
     gap: 7%;
     grid-template-columns: 46.2% 46.2%;
-    grid-template-rows: 40px 40px 40px;
+    grid-template-rows: 45px 45px 45px;
 }
 
 #formp{
@@ -177,4 +179,8 @@ margin-top: 30%;
     font-size: 79%;
     border-radius: 3px;
     font-weight: bold;
+}
+#faqsection{
+    width: 105%;
+    background: rgba(240,242,243,255);
 }
