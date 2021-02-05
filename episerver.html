@@ -402,9 +402,50 @@
        </div>
     </div>
     <div id="faqsection">
-        <div>
-            
+        <div id="faqbody">
+            <div>
+                    <h1 class="h2_head font">Frequently Asked Questions</h1>
+                <div class="collapsiblefaq font">
+                    What is happening?
+                </div>
+                <div class="content font">
+                    <p>
+                        In September 2020 Optimizely was acquired by Episerver, a leading Digital Experience Platform. After a year in which the digital experience space and customer expectations evolved at lightning speed we decided that we needed to combined the strength
+                         of Episerver and Optimizely to ensure we’re providing customers with the best-in-class digital experience platform.
+                    </p>
+                    <p>
+                        We’re excited to announce that this year 
+                        Episerver and Optimizely will be moving forward as a combined business under the name Optimizely.
+                    </p>
+                    <p>
+                        While we’re keeping the name Optimizely, we’ll be forming a new brand that is built on both companies’ roots. Over the coming months, you’ll start to see changes to our visual identity, for example a new logo, leading up to the full brand relaunch in September.
+                    </p>
+                </div>
+            </div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
         </div>
     </div>
+    <script>
+       var coll = document.getElementsByClassName("collapsiblefaq");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    } 
+  });
+}
+        </script>
 </body>
 </html>
