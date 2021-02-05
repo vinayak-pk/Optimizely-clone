@@ -9,30 +9,36 @@
 .font>h1{
     font-size: 3vw;
 }
-
-#top{
+.align-center{
     width: 90%;
     margin: auto;
-    border: 1px solid red;
 }
    
 .flexbox_ep{
     display: flex;
     flex-direction: row;
+    flex-flow: row;
 }
 #topimg{
    flex-grow: 0.5;
 }
 .right_text{
     text-align: left;
-    width: 40.6%;
+    width: 41%;
     flex-wrap: nowrap;
     line-height: 1.8;
-    border: 1px solid black;
 }
-.right_text>p{
+.a_clean{
+    color: rgb(0, 65, 245);
+    text-decoration: none;
+}
+.increase-gap{
+    margin-top: 10%;
+}
+.pstyle{
 color: grey;
 font-size: 17px;
+line-height: 1.8;
 }
 .blackb{
     width: 35%;
@@ -48,4 +54,49 @@ font-size: 17px;
     font-size: 16px;
     font-weight: 700;
     color: rgba(22, 22, 22, 0.747);
+}
+.h2_head{
+    font-size: 36px;
+    text-align: center;
+}
+#top-mid-box>div{
+    width:95%;
+    margin: auto;
+}
+#top-mid-box>div>div{
+    flex-grow: 0.5;
+    gap: 10px;
+    margin: 10px 20px 10px 0;
+    width:25%;
+}
+#top-mid-box img{
+    width: 10%;
+}
+
+
+#top-lower-box>div{
+    flex-grow: 1;
+}
+#top-lower-box>div p{
+margin-top: 30%;
+}
+#top-lower-text{
+  width: 28%;
+}
+#middlebody>div>div>img{
+      width: 100%;
+      cursor: default;
+}
+#middlebody>div>div h4{
+    font-size: 17px;
+}
+#middlebody>div>div{
+    flex-grow: 1;
+    gap: 2%;
+    cursor: pointer;
+}
+.arrow{
+    color: black;
+    font-size: 12px;
+    letter-spacing: 1px;
 }
