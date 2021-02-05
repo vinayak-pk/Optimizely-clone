@@ -3,11 +3,15 @@
     margin: auto;
     background: rgba(240,242,243,255);
 }
+#top{
+    margin-top: 5%;
+}
 .font{
     font-family: 'Roboto', sans-serif;
 }
 .font>h1{
     font-size: 3vw;
+    margin-bottom: 2%;
 }
 .align-center{
     width: 90%;
@@ -25,6 +29,9 @@
 }
 #topimg{
    flex-grow: 0.5;
+}
+#topimg img{
+    margin-top: 10%;
 }
 .right_text{
     text-align: left;
@@ -235,3 +242,38 @@ margin-top: 30%;
       font-size: 89%;
       color: rgb(54, 54, 54);
   }
+  .header{
+    overflow: hidden;
+    position: fixed;
+    background-color: #ffffff;
+    height: 80px;
+    width: 1280px;
+    box-shadow: 0px 2px #e9e5e5; 
+    opacity: 0.98;
+    top:0;
+    z-index: 99;
+}
+.eheader-logo{
+    padding-top: 8px; 
+    padding-left: 75px;
+}
+.emenu-bar{
+    float: left;
+}
+.emenu-bar a{
+    text-decoration: none;
+    font-size: 11px;
+    /* color: #AFB8C1; */
+    color: #6b7c8d;
+    
+}
+.echange-color{
+    margin-top: 23px;
+    margin-left: 41px;
+}
+.efirst-menu{
+    margin-left: 90px;
+}
+.elog-in{
+    margin-left: 10.1%;
+}
