@@ -19,7 +19,7 @@
                 z-index: 99;
             }
             .header-logo{
-                padding-top: 8px;
+                padding-top: 8px; 
                 padding-left: 75px;
             }
             .menu-bar{
@@ -65,7 +65,8 @@
             .role{
                 background-color: #f0f2f3;
                 width: 1280px;
-                height: 650px;
+                /* height: 650px; */
+                padding-bottom: 100px;
             }
             .role h2{
                 text-align: center;
@@ -73,7 +74,7 @@
                 font-size: 35px;
             }
             .role-product{
-                margin-left: 10%;
+                margin-left: 2%;
             }
             .role-product div{
                 background-color: #f0f2f3;
@@ -84,7 +85,7 @@
             .role-product button{
                 background-color: none;
                 margin-top: 10px;
-                margin-left: 40px;
+                margin-left: 60px;
                 padding-bottom: 20px;
                 border: none;
                 
@@ -136,20 +137,20 @@
             <h2>Choose your role to get started</h2>
             <div class="role-product">
                 <div>
-                    <button style="color:#0037ff; font-size: 20px;" >MARKETING & GROWTH</button>
+                    <button style="color:#0037ff; font-size: 20px; border-bottom: 2px solid #0037ff;" id="btn1" class="btn" onclick="print1()">MARKETING & GROWTH</button>
                 </div>
                 <div class="space">
-                    <button style="font-size: 20px;">PRODUCT MANAGER</button></div>
+                    <button style="font-size: 20px;" id="btn2" class="btn" onclick="print2()">PRODUCT MANAGER</button></div>
                 <div class="space">
-                    <button style="font-size: 20px;">DEVELOPER</button></div>
+                    <button style="font-size: 20px; " id="btn3" class="btn" onclick="print3()">DEVELOPER</button></div>
                 <div class="space">
-                    <button style="font-size: 20px;">TEAM LEADER</button></div>
+                    <button style="font-size: 20px;" id="btn4" class="btn" onclick="print4()">TEAM LEADER</button></div>
                 <div class="space">
-                    <button style="font-size: 20px;">ANALYTICS</button></div>
+                    <button style="font-size: 20px;" class="btn" id="btn5" onclick="print5()">ANALYTICS</button></div>
             </div>
 
             <!-- starting of MARKETING & GROWTH div-->
-            <div style="margin-top: 12%; margin-left: 60px; overflow: visible; visibility:hidden;">
+            <div style="margin-top: 12%; margin-left: 60px; overflow: visible; display: block;" id="tab1" class="tab">
                 <div style="float: left;">
                     <h1 style="padding-left: 20px; position: relative;">Make impactful <br>marketing decisions</h1>
                 </div>
@@ -166,7 +167,7 @@
             <!-- ending of MARKETING & GROWTH div-->
 
             <!--Starting of PRODUCT MANAGER div-->
-            <div style="margin-top: 12%; margin-left: 60px; overflow: visible; visibility:visible;">
+            <div style="  display: none; " id="tab2" class="tab">
                 <div style="float: left;">
                     <h1 style="padding-left: 20px; position: relative;">Build better products with<br> experimentation</h1>
                 </div>
@@ -182,7 +183,7 @@
             </div>
             <!--ending of PRODUCT MANAGER div-->
             <!--Starting of DEVELOPER-->
-            <div style="margin-top: 12%; margin-left: 60px; overflow: visible; visibility:hidden;">
+            <div style=" margin-left: 60px; overflow: visible; display: none;"id="tab3"class="tab">
                 <div style="float: left;">
                     <h1 style="padding-left: 20px; position: relative;">Reduce risk and ship <br>faster</h1>
                 </div>
@@ -198,11 +199,11 @@
             </div>
             <!--Ending of DEVELOPER-->
             <!--Starting of TEAM LEADER div-->
-            <div style="margin-top: 12%; margin-left: 60px; overflow: visible; visibility:hidden;">
+            <div style="margin-left: 60px; overflow: visible; display: none;" id="tab4"class="tab">
                 <div style="float: left;">
                     <h1 style="padding-left: 20px; position: relative;">Grow faster with less risk</h1>
                 </div>
-                <div style="float: right; margin-top: -150px; padding-top: 40px;padding-right: 37px; height: 300px; width: 800px;  background-color: #ffffff; margin-right: 60px;">
+                <div style="float: right; margin-top: -110px; padding-top: 40px;padding-right: 37px; height: 300px; width: 800px;  background-color: #ffffff; margin-right: 60px;">
                     <p style="padding-left: 180px;">Target your messaging, personalize your campaigns, and ultimately drive substantial growth for your business. 
                         Powerful, easy to use solutions, to test what messages, imagery, and offers help increase conversion, retention, 
                         and lifetime value.</p>
@@ -214,7 +215,7 @@
             </div>
             <!--Ending of TEAM LEADER div-->
             <!--Starting of ANALYTICS-->
-            <div style="margin-top: 12%; margin-left: 60px; overflow: visible; visibility:hidden;">
+            <div style=" margin-left: 60px; overflow: visible; display: none;" id="tab5"class="tab">
                 <div style="float: left;">
                     <h1 style="padding-left: 20px; position: relative;">Make trusted decisions <br>with data</h1>
                 </div>
@@ -228,7 +229,7 @@
                     <img src="file:///home/lokesh/Team-Indus/Img/img-3.png"  style="position:relative; left: 228px; bottom: -42.5px;"/>
                 </div>
             </div>
-            <!<!--Starting of ANALYTICS-->
+            <!--Starting of ANALYTICS-->
         </div>
 
         <div class="company-logos" style="margin-top: 30px;margin-left: 80px;">
@@ -276,5 +277,98 @@
                      their business.</p>
             </div>
         </div>
+        <script>
+            function print1(){
+                var data = document.getElementById('tab1');
+                document.getElementById('tab2').style.display = "none";
+                document.getElementById('tab3').style.display = "none";
+                document.getElementById('tab4').style.display = "none";
+                document.getElementById('tab5').style.display = "none";
+                data.style.display = "block";
+                document.getElementById('btn1').style.color = "#0037ff";
+                document.getElementById('btn2').style.color = "#2e3436";
+                document.getElementById('btn3').style.color = "#2e3436";
+                document.getElementById('btn4').style.color = "#2e3436";
+                document.getElementById('btn5').style.color = "#2e3436";
+                document.getElementById('btn1').style.borderBottom = "2px solid #0037ff"
+                document.getElementById('btn2').style.borderBottom = "none"
+                document.getElementById('btn3').style.borderBottom = "none"
+                document.getElementById('btn4').style.borderBottom = "none"
+                document.getElementById('btn5').style.borderBottom = "none"
+
+            }
+            function print2(){
+                var data = document.getElementById('tab2');
+                document.getElementById('tab1').style.display = "none";
+                document.getElementById('tab3').style.display = "none";
+                document.getElementById('tab4').style.display = "none";
+                document.getElementById('tab5').style.display = "none";
+                data.style.display = "block";
+                document.getElementById('btn2').style.color = "#0037ff";
+                document.getElementById('btn1').style.color = "#2e3436";
+                document.getElementById('btn3').style.color = "#2e3436";
+                document.getElementById('btn4').style.color = "#2e3436";
+                document.getElementById('btn5').style.color = "#2e3436";
+                document.getElementById('btn2').style.borderBottom = "2px solid #0037ff"
+                document.getElementById('btn1').style.borderBottom = "none"
+                document.getElementById('btn3').style.borderBottom = "none"
+                document.getElementById('btn4').style.borderBottom = "none"
+                document.getElementById('btn5').style.borderBottom = "none"
+            }
+            function print3(){
+                var data = document.getElementById('tab3');
+                document.getElementById('tab1').style.display = "none";
+                document.getElementById('tab2').style.display = "none";
+                document.getElementById('tab4').style.display = "none";
+                document.getElementById('tab5').style.display = "none";
+                data.style.display = "block";
+                document.getElementById('btn3').style.color = "#0037ff";
+                document.getElementById('btn1').style.color = "#2e3436";
+                document.getElementById('btn2').style.color = "#2e3436";
+                document.getElementById('btn4').style.color = "#2e3436";
+                document.getElementById('btn5').style.color = "#2e3436";
+                document.getElementById('btn3').style.borderBottom = "2px solid #0037ff"
+                document.getElementById('btn2').style.borderBottom = "none"
+                document.getElementById('btn1').style.borderBottom = "none"
+                document.getElementById('btn4').style.borderBottom = "none"
+                document.getElementById('btn5').style.borderBottom = "none"
+            }
+            function print4(){
+                var data = document.getElementById('tab4');
+                document.getElementById('tab1').style.display = "none";
+                document.getElementById('tab2').style.display = "none";
+                document.getElementById('tab3').style.display = "none";
+                document.getElementById('tab5').style.display = "none";
+                data.style.display = "block";
+                document.getElementById('btn4').style.color = "#0037ff";
+                document.getElementById('btn1').style.color = "#2e3436";
+                document.getElementById('btn3').style.color = "#2e3436";
+                document.getElementById('btn2').style.color = "#2e3436";
+                document.getElementById('btn5').style.color = "#2e3436";
+                document.getElementById('btn4').style.borderBottom = "2px solid #0037ff"
+                document.getElementById('btn2').style.borderBottom = "none"
+                document.getElementById('btn3').style.borderBottom = "none"
+                document.getElementById('btn1').style.borderBottom = "none"
+                document.getElementById('btn5').style.borderBottom = "none"
+            }
+            function print5(){
+                var data = document.getElementById('tab5');
+                document.getElementById('tab1').style.display = "none";
+                document.getElementById('tab2').style.display = "none";
+                document.getElementById('tab4').style.display = "none";
+                document.getElementById('tab3').style.display = "none";
+                data.style.display = "block";
+                document.getElementById('btn5').style.color = "#0037ff";
+                document.getElementById('btn1').style.color = "#2e3436";
+                document.getElementById('btn3').style.color = "#2e3436";
+                document.getElementById('btn4').style.color = "#2e3436";
+                document.getElementById('btn2').style.color = "#2e3436";
+                document.getElementById('btn5').style.borderBottom = "2px solid #0037ff"
+                document.getElementById('btn2').style.borderBottom = "none"
+                document.getElementById('btn3').style.borderBottom = "none"
+                document.getElementById('btn4').style.borderBottom = "none"
+                document.getElementById('btn1').style.borderBottom = "none"
+            }
+        </script>
     </body>
 </html>
