@@ -130,6 +130,31 @@
              background-color: rgb(216, 218, 214);
              width: 15%;
          }
+         .collapsible {
+             margin: auto;
+                background-color: rgb(236, 227, 227);
+                color:blue;
+                cursor: pointer;
+                padding: 18px;
+                width: 80%;
+                border: none;
+                text-align: left;
+                outline: none;
+                font-size: 15px;
+                }
+
+                .active, .collapsible:hover {
+                background-color: rgb(211, 209, 209);
+                }
+
+                .content {
+                padding: 0 18px;
+                display: none;
+                overflow: hidden;
+                background-color: #f1f1f1;
+                }
+
+
     </style>
     <body>
         <div><h1>Deliver better code, apps, and growth. Faster.</h1><p>Ship quickly and confidently with feature flagging. Ship intelligently with A/B testing. Implement successfully with the world’s largest team of experts.</p></div>
@@ -184,41 +209,121 @@
         </div>
          <div>   
             <div>
-                <div><h4>Create and Deliver Experiences</h4></div>
+                <button type="button" class="collapsible">Creative and deliver Experiences</button>
+                <div class="content">
+                <p></p>
+                </div>
+
             </div>
             <div>
-                <div><h4>Experiment Types</h4></div>
+                <button type="button" class="collapsible">Experiment Types</button>
+                <div class="content">
+                <p></p>
+                </div>
+
             </div>
             <div>
-                <div><h4>Implementation</h4></div>
+                <button type="button" class="collapsible">Implementation</button>
+                <div class="content">
+                <p></p>
+                </div>
+
             </div>
             <div>
-                <div><h4>Advanced Personalization</h4></div>
+                <button type="button" class="collapsible">Advanced Personalization</button>
+                <div class="content">
+                <p></p>
+                </div>
+
             </div>
+           
+            
+                <button type="button" class="collapsible">Results</button>
+                <div class="content">
+                <p></p>
+                </div>
+
+            </div>
+
             <div>
-                <div><h4>Results</h4></div>
+                <button type="button" class="collapsible">Targeting</button>
+                <div class="content">
+                <p></p>
+                </div>
+
             </div>
+           
+            
             <div>
-                <div><h4>Targeting</h4></div>
+                <button type="button" class="collapsible">Optimizely Program Management</button>
+                <div class="content">
+                <p></p>
+                </div>
+
             </div>
+           
+            
             <div>
-                <div><h4>Optimizely Program Management</h4></div>
+                <button type="button" class="collapsible">Security and Administartive Control</button>
+                <div class="content">
+                <p></p>
+                </div>
+
             </div>
+           
+
             <div>
-                <div><h4>Security and Administartive COntrol</h4></div>
+                <button type="button" class="collapsible">Performance</button>
+                <div class="content">
+                <p></p>
+                </div>
+
             </div>
+           
+        
             <div>
-                <div><h4>Performance</h4></div>
+                <button type="button" class="collapsible">API</button>
+                <div class="content">
+                <p></p>
+                </div>
+
             </div>
+          
+                <button type="button" class="collapsible">Support</button>
+                <div class="content">
+                <p></p>
+                </div>
+
+            </div>
+           
+           
             <div>
-                <div><h4>API</h4></div>
+                <button type="button" class="collapsible">Salesforce</button>
+                <div class="content">
+                <p></p>
+                </div>
+
             </div>
-            <div>
-                <div><h4>Support</h4></div>
-            </div>
-            <div>
-                <div><h4>Salesforce</h4></div>
-            </div>
+           
         </div>    
     </body>
+    <script>
+        
+        var coll = document.getElementsByClassName("collapsible");
+        
+
+        for (var i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.display === "block") {
+            content.style.display = "none";
+            } else {
+            content.style.display = "block";
+            }
+        });
+}
+
+
+    </script>
 </html>
