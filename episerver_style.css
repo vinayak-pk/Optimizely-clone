@@ -95,8 +95,33 @@ margin-top: 30%;
     gap: 2%;
     cursor: pointer;
 }
+
 .arrow{
     color: black;
     font-size: 12px;
     letter-spacing: 1px;
 }
+
+.animate-arrow {
+    position: relative;
+    transition: all 0.25s;
+    padding-right: 25px;
+}
+.animate-arrow::after {
+    display: inline-block;
+    content: "\27F6";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: 16px;
+    right: 0;
+    position: absolute;
+    transform: scale(0.8);
+    transition: opacity 0.25s;
+}
+.animate-arrow:hover {
+    padding-right: 34px;
+}
+#bottomimg{
+    width: 150%;
+}
+
