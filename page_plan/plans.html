@@ -32,7 +32,7 @@
             height: 500px;
             margin: 2%;
         }
-        body > div:nth-child(2) > p{
+        body > div:nth-child(2) >div > p{
             font-size: 20px;
         }
         body > div:nth-child(2) > div:nth-child(1) {
@@ -131,7 +131,7 @@
              width: 15%;
          }
          .collapsible {
-             margin: auto;
+                margin: auto;
                 background-color: rgb(236, 227, 227);
                 color:blue;
                 cursor: pointer;
@@ -152,25 +152,32 @@
                 display: none;
                 overflow: hidden;
                 background-color: #f1f1f1;
+                
                 }
-
-
+                .table_row {
+                    display: flex;
+                    flex-direction: row;
+                }
+                .table_row > div {
+                    flex-basis: 50% 19% 19% 19%;
+                    border: blue 1px solid;
+                    }
     </style>
     <body>
         <div><h1>Deliver better code, apps, and growth. Faster.</h1><p>Ship quickly and confidently with feature flagging. Ship intelligently with A/B testing. Implement successfully with the world’s largest team of experts.</p></div>
         <div>
-            <div><h1>Full Stack</h1><h5>Feature Rollouts and Experimentation</h5><p>Use feature flagging and experimentation deep in your stack to deliver better web, mobile, TV and chat apps.
+            <div><h1>Full Stack</h1><h5>Feature Rollouts and Experimentation</h5><p>Use feature flagging and experimentation deep in your stack to deliver better web, mobile, TV and chat apps. <br>
 
-                Experiment on UX, APIs, and feature variations
-                Iterate and roll out anywhere with 12 SDKs or using a microservice
-                Remotely update apps and experiments in real-time
-                Ship safely and prevent roll backs and hotfixes</p></div>
+               <br> Experiment on UX, APIs, and feature variations <br>
+               <br> Iterate and roll out anywhere with 12 SDKs or using a microservice <br>
+               <br> Remotely update apps and experiments in real-time <br>
+               <br> Ship safely and prevent roll backs and hotfixes</p></div>
             <div><h1>Web</h1><h5>Web Optimization and Personalization</h5><p>Use a no-code visual editor to instantly deploy website experiments and personalization campaigns.
 
-                Powerful front-end A/B, MVT and multi-page experimentation
-                Target and segment users using robust dimensions
-                Support for dynamic sites and single page apps
-                Extend using robust APIs and reusable extensions</p></div>
+               <br> Powerful front-end A/B, MVT and multi-page experimentation <br>
+               <br> Target and segment users using robust dimensions <br>
+               <br> Support for dynamic sites and single page apps <br>
+               <br> Extend using robust APIs and reusable extensions</p></div>
             
         </div>
         <div>
@@ -211,7 +218,12 @@
             <div>
                 <button type="button" class="collapsible">Creative and deliver Experiences</button>
                 <div class="content">
-                <p></p>
+                    <p><div id="table_row">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div></p>
                 </div>
 
             </div>
