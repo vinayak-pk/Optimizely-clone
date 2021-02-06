@@ -100,6 +100,17 @@
             div a:hover{
                 text-decoration: underline;
             }
+            .twoFlotingbox{
+                margin-left: 20%;
+                display: grid;
+                grid-template-columns: 40% 60%;
+            }
+            .twoFlotingbox button{
+                background-color: #ffffff;
+                border: none;
+                font-size: 20px;
+                height: 60px;
+            }
         </style>
     </head>
     <body>
@@ -183,9 +194,7 @@
                     <h1 style="padding-left: 20px; position: relative;">Build better products with<br> experimentation</h1>
                 </div>
                 <div style="float: right; margin-top: -150px; padding-top: 40px;padding-right: 37px; height: 300px; width: 800px;  background-color: #ffffff; margin-right: 60px;">
-                    <p style="padding-left: 180px;">Target your messaging, personalize your campaigns, and ultimately drive substantial growth for your business. 
-                        Powerful, easy to use solutions, to test what messages, imagery, and offers help increase conversion, retention, 
-                        and lifetime value.</p>
+                    <p style="padding-left: 180px;">Roll out new features confidently. Run tests on segments of your user base and apply only the changes that work. Experimentation solutions for rapid prototyping and more complex feature tests.</p>
                     <button style="margin-left: 180px; background-color: black; color: white; border: none; padding-top: 15px; padding-bottom: 15px;padding-left: 30px; padding-right: 30px; border-radius: 5px; margin-top: 30px;">TRY OUT VISUAL EDITOR</button>
                 </div>
                 <div">
@@ -199,9 +208,7 @@
                     <h1 style="padding-left: 20px; position: relative;">Reduce risk and ship <br>faster</h1>
                 </div>
                 <div style="float: right; margin-top: -150px; padding-top: 40px;padding-right: 37px; height: 300px; width: 800px;  background-color: #ffffff; margin-right: 60px;">
-                    <p style="padding-left: 180px;">Target your messaging, personalize your campaigns, and ultimately drive substantial growth for your business. 
-                        Powerful, easy to use solutions, to test what messages, imagery, and offers help increase conversion, retention, 
-                        and lifetime value.</p>
+                    <p style="padding-left: 180px;">Improve your product quality and velocity with feature management. Drive measurable impact with product experimentation. Optimize the experience across any platform including websites, backend code, mobile and conversational apps.</p>
                     <button style="margin-left: 180px; background-color: black; color: white; border: none; padding-top: 15px; padding-bottom: 15px;padding-left: 30px; padding-right: 30px; border-radius: 5px; margin-top: 30px;">TRY OUT VISUAL EDITOR</button>
                 </div>
                 <div">
@@ -215,9 +222,7 @@
                     <h1 style="padding-left: 20px; position: relative;">Grow faster with less risk</h1>
                 </div>
                 <div style="float: right; margin-top: -110px; padding-top: 40px;padding-right: 37px; height: 300px; width: 800px;  background-color: #ffffff; margin-right: 60px;">
-                    <p style="padding-left: 180px;">Target your messaging, personalize your campaigns, and ultimately drive substantial growth for your business. 
-                        Powerful, easy to use solutions, to test what messages, imagery, and offers help increase conversion, retention, 
-                        and lifetime value.</p>
+                    <p style="padding-left: 180px;">Transform your business with the world’s leading experimentation platform, empowering product, engineering, and marketing teams to test, learn and deploy winning digital experiences, every time. With over 1M experiments run on our platform and best-in-class services and support, we'll help you scale innovation across your organization.</p>
                     <button style="margin-left: 180px; background-color: black; color: white; border: none; padding-top: 15px; padding-bottom: 15px;padding-left: 30px; padding-right: 30px; border-radius: 5px; margin-top: 30px;">TRY OUT VISUAL EDITOR</button>
                 </div>
                 <div">
@@ -231,9 +236,7 @@
                     <h1 style="padding-left: 20px; position: relative;">Make trusted decisions <br>with data</h1>
                 </div>
                 <div style="float: right; margin-top: -150px; padding-top: 40px;padding-right: 37px; height: 300px; width: 800px;  background-color: #ffffff; margin-right: 60px;">
-                    <p style="padding-left: 180px;">Target your messaging, personalize your campaigns, and ultimately drive substantial growth for your business. 
-                        Powerful, easy to use solutions, to test what messages, imagery, and offers help increase conversion, retention, 
-                        and lifetime value.</p>
+                    <p style="padding-left: 180px;">Optimizely built a Stats Engine with leaders in statistical research at <a href="/resources/stats-engine-whitepaper/">Stanford University</a> that provides built-in false discovery rate and helps teams get to statistical significance faster.</p>
                     <button style="margin-left: 180px; background-color: black; color: white; border: none; padding-top: 15px; padding-bottom: 15px;padding-left: 30px; padding-right: 30px; border-radius: 5px; margin-top: 30px;">TRY OUT VISUAL EDITOR</button>
                 </div>
                 <div">
@@ -265,9 +268,11 @@
             <h1 style="text-align: center; padding-left: 13%; padding-right: 10%;">Join more then 20 of the top Fortune 100 global businesses who depend on Optimizely every day to make smarter decision</h1>
         </div>
 
-        <div style="margin-top: 7%;">
-            <div style="float: left; margin-left: 30%; color: #0037ff;">MARKETING & GROWTH</div>
-            <div style="padding-left: 57%;">PRODUCT & ENGINEERING</div>
+        <div style="margin-top: 7%;" class="twoFlotingbox">
+            <div style="margin-left: 30%;  ">
+                <button style="color: #0037ff; border-bottom: 2px solid #0037ff;" id="btn6" onclick="print6()">MARKETING & GROWTH</button></div>
+            <div>
+                <button id="btn7" onclick="print7()">PRODUCT & ENGINEERING</button></div>
         </div>
 
 
@@ -384,6 +389,10 @@
             <div style="margin-top: 2%;font-size: 12px;"><p>@ 2021 Optimizely, Inc. All Rights Reserved.</a></div>
         </div>
         <script>
+            function print7(){
+                document.getElementById('btn7').style.borderBottom ="2px solid #0037ff;"
+                document.getElementById('btn8').style.color = "none"
+            }
             function print1(){
                 var data = document.getElementById('tab1');
                 document.getElementById('tab2').style.display = "none";
