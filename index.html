@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Optimizely: The World's Leading Digital Experience Platform</title>
+        <style>
+            body{
+                /* background-color: #ffffff; */
+                margin: 0;
+                padding: 0;
+            }
+            .header{
+                overflow: hidden;
+                position: fixed;
+                background-color: #ffffff;
+                height: 100px;
+                width: 1280px;
+                box-shadow: 0px 2px #e9e5e5; 
+                top:0;
+                z-index: 99;
+            }
+            .header-logo{
+                padding-top: 8px; 
+                padding-left: 75px;
+            }
+            .menu-bar{
+                float: left;
+            }
+            .menu-bar a{
+                text-decoration: none;
+                font-size: 11px;
+                /* color: #AFB8C1; */
+                color: #6b7c8d;
+                
+            }
+            .change-color{
+                margin-top: 23px;
+                margin-left: 41px;
+            }
+            .first-menu{
+                margin-left: 90px;
+            }
+            .log-in{
+                margin-left: 10.1%;
+            }
+            .after-header{
+                background-image: url(file:///home/lokesh/Team-Indus/Img/img-2.png);
+                margin-top: 20px;
+            }
+            .after-header div{
+                padding-top: 10%;
+                padding-left: 6%;
+                padding-bottom: 14%;
+            }
+            .learnmore{
+                background-color: black;
+                border:hidden;
+                color: white;
+                margin-top: 20px;
+                padding-top: 15px;
+                padding-bottom: 15px;
+                padding-left: 40px;
+                padding-right: 40px;
+                border-radius: 5px;
+                text-decoration: none;
+                
+            }
+            .role{
+                background-color: #f0f2f3;
+                width: 1280px;
+                /* height: 650px; */
+                padding-bottom: 100px;
+            }
+            .role h2{
+                text-align: center;
+                padding-top: 10%;
+                font-size: 35px;
+            }
+            .role-product{
+                margin-left: 2%;
+            }
+            .role-product div{
+                background-color: #f0f2f3;
+                float: left;
+                font-size: 13px;
+                margin-left: 10px;
+            }
+            .role-product button{
+                background-color: none;
+                margin-top: 10px;
+                margin-left: 60px;
+                padding-bottom: 20px;
+                border: none;
+                
+            }
+            div a{
+                color: #7d7d7d;
+                font-size: 12px;
+                text-decoration: none;
+            }
+            div a:hover{
+                text-decoration: underline;
+            }
+            .twoFlotingbox{
+                margin-left: 20%;
+                display: grid;
+                grid-template-columns: 40% 60%;
+            }
+            .twoFlotingbox button{
+                background-color: #ffffff;
+                border: none;
+                font-size: 20px;
+                height: 60px;
+            }
+        </style>
+    </head>
+    <body>
+        
+            <div class="header">
+                <div class="header-logo menu-bar">
+                    <a href="index.html"><img src="file:///home/lokesh/Desktop/optimizely_Logo.png"></a>
+                </div>
+                <div class="menu-bar change-color first-menu">
+                    <a href="">PLATFORM</a>
+                </div>
+                <div class="menu-bar change-color">
+                    <a href="">SOLUTION</a>
+                </div>
+                <div class="menu-bar change-color">
+                    <a href="">FOR DEVELOPERS</a>
+                </div>
+                <div class="menu-bar change-color">
+                    <a href="/home/lokesh/Team-Indus/page_customers/customer.html">CUSTOMER</a>
+                </div>
+                <div class="menu-bar change-color">
+                    <a href="file:///home/lokesh/Team-Indus/page_plan/plans.html">PLANS</a>
+                </div>
+                <div class="menu-bar change-color">
+                    <a href="">RESOURCES</a>
+                </div>
+                <div class="menu-bar log-in change-color">
+                    <a href="/home/lokesh/Team-Indus/login_page.html">LOG IN</a>
+                </div>
+            </div>
+        
+
+        <div class="after-header">
+            <div>
+                <h1>Unlock digital potential</h1>
+                <p style="margin-bottom:40px;">Creating digital experiences that can transform your<br>
+                    company takes data-driven decisions, continued <br>
+                    experimentation and constant invention. We’ve been doing<br>
+                     some re-inventing of our own.</p>
+                
+                <a href="file:///home/lokesh/Team-Indus/episerver.html" class="learnmore">LEARN MORE</a>
+            </div>
+        </div>
+        
+        <div class="role">
+            <h2>Choose your role to get started</h2>
+            <div class="role-product">
+                <div>
+                    <button style="color:#0037ff; font-size: 20px; border-bottom: 2px solid #0037ff;" id="btn1" class="btn" onclick="print1()">MARKETING & GROWTH</button>
+                </div>
+                <div class="space">
+                    <button style="font-size: 20px;" id="btn2" class="btn" onclick="print2()">PRODUCT MANAGER</button></div>
+                <div class="space">
+                    <button style="font-size: 20px; " id="btn3" class="btn" onclick="print3()">DEVELOPER</button></div>
+                <div class="space">
+                    <button style="font-size: 20px;" id="btn4" class="btn" onclick="print4()">TEAM LEADER</button></div>
+                <div class="space">
+                    <button style="font-size: 20px;" class="btn" id="btn5" onclick="print5()">ANALYTICS</button></div>
+            </div>
+
+            <!-- starting of MARKETING & GROWTH div-->
+            <div style="margin-top: 12%; margin-left: 60px; overflow: visible; display: block;" id="tab1" class="tab">
+                <div style="float: left;">
+                    <h1 style="padding-left: 20px; position: relative;">Make impactful <br>marketing decisions</h1>
+                </div>
+                <div style="float: right; margin-top: -150px; padding-top: 40px;padding-right: 37px; height: 300px; width: 800px;  background-color: #ffffff; margin-right: 60px;">
+                    <p style="padding-left: 180px;">Target your messaging, personalize your campaigns, and ultimately drive substantial growth for your business. 
+                        Powerful, easy to use solutions, to test what messages, imagery, and offers help increase conversion, retention, 
+                        and lifetime value.</p>
+                    <button style="margin-left: 180px; background-color: black; color: white; border: none; padding-top: 15px; padding-bottom: 15px;padding-left: 30px; padding-right: 30px; border-radius: 5px; margin-top: 30px;">TRY OUT VISUAL EDITOR</button>
+                </div>
+                <div">
+                    <img src="file:///home/lokesh/Team-Indus/Img/img-3.png"  style="position:relative; left: 228px; bottom: -42.5px;"/>
+                </div>
+            </div>
+            <!-- ending of MARKETING & GROWTH div-->
+
+            <!--Starting of PRODUCT MANAGER div-->
+            <div style="  display: none; " id="tab2" class="tab">
+                <div style="float: left;">
+                    <h1 style="padding-left: 20px; position: relative;">Build better products with<br> experimentation</h1>
+                </div>
+                <div style="float: right; margin-top: -150px; padding-top: 40px;padding-right: 37px; height: 300px; width: 800px;  background-color: #ffffff; margin-right: 60px;">
+                    <p style="padding-left: 180px;">Roll out new features confidently. Run tests on segments of your user base and apply only the changes that work. Experimentation solutions for rapid prototyping and more complex feature tests.</p>
+                    <button style="margin-left: 180px; background-color: black; color: white; border: none; padding-top: 15px; padding-bottom: 15px;padding-left: 30px; padding-right: 30px; border-radius: 5px; margin-top: 30px;">TRY OUT VISUAL EDITOR</button>
+                </div>
+                <div">
+                    <img src="file:///home/lokesh/Team-Indus/Img/img-3.png"  style="position:relative; left: 228px; bottom: -42.5px;"/>
+                </div>
+            </div>
+            <!--ending of PRODUCT MANAGER div-->
+            <!--Starting of DEVELOPER-->
+            <div style=" margin-left: 60px; overflow: visible; display: none;"id="tab3"class="tab">
+                <div style="float: left;">
+                    <h1 style="padding-left: 20px; position: relative;">Reduce risk and ship <br>faster</h1>
+                </div>
+                <div style="float: right; margin-top: -150px; padding-top: 40px;padding-right: 37px; height: 300px; width: 800px;  background-color: #ffffff; margin-right: 60px;">
+                    <p style="padding-left: 180px;">Improve your product quality and velocity with feature management. Drive measurable impact with product experimentation. Optimize the experience across any platform including websites, backend code, mobile and conversational apps.</p>
+                    <button style="margin-left: 180px; background-color: black; color: white; border: none; padding-top: 15px; padding-bottom: 15px;padding-left: 30px; padding-right: 30px; border-radius: 5px; margin-top: 30px;">TRY OUT VISUAL EDITOR</button>
+                </div>
+                <div">
+                    <img src="file:///home/lokesh/Team-Indus/Img/img-3.png"  style="position:relative; left: 228px; bottom: -42.5px;"/>
+                </div>
+            </div>
+            <!--Ending of DEVELOPER-->
+            <!--Starting of TEAM LEADER div-->
+            <div style="margin-left: 60px; overflow: visible; display: none;" id="tab4"class="tab">
+                <div style="float: left;">
+                    <h1 style="padding-left: 20px; position: relative;">Grow faster with less risk</h1>
+                </div>
+                <div style="float: right; margin-top: -110px; padding-top: 40px;padding-right: 37px; height: 300px; width: 800px;  background-color: #ffffff; margin-right: 60px;">
+                    <p style="padding-left: 180px;">Transform your business with the world’s leading experimentation platform, empowering product, engineering, and marketing teams to test, learn and deploy winning digital experiences, every time. With over 1M experiments run on our platform and best-in-class services and support, we'll help you scale innovation across your organization.</p>
+                    <button style="margin-left: 180px; background-color: black; color: white; border: none; padding-top: 15px; padding-bottom: 15px;padding-left: 30px; padding-right: 30px; border-radius: 5px; margin-top: 30px;">TRY OUT VISUAL EDITOR</button>
+                </div>
+                <div">
+                    <img src="file:///home/lokesh/Team-Indus/Img/img-3.png"  style="position:relative; left: 228px; bottom: -42.5px;"/>
+                </div>
+            </div>
+            <!--Ending of TEAM LEADER div-->
+            <!--Starting of ANALYTICS-->
+            <div style=" margin-left: 60px; overflow: visible; display: none;" id="tab5"class="tab">
+                <div style="float: left;">
+                    <h1 style="padding-left: 20px; position: relative;">Make trusted decisions <br>with data</h1>
+                </div>
+                <div style="float: right; margin-top: -150px; padding-top: 40px;padding-right: 37px; height: 300px; width: 800px;  background-color: #ffffff; margin-right: 60px;">
+                    <p style="padding-left: 180px;">Optimizely built a Stats Engine with leaders in statistical research at <a href="/resources/stats-engine-whitepaper/">Stanford University</a> that provides built-in false discovery rate and helps teams get to statistical significance faster.</p>
+                    <button style="margin-left: 180px; background-color: black; color: white; border: none; padding-top: 15px; padding-bottom: 15px;padding-left: 30px; padding-right: 30px; border-radius: 5px; margin-top: 30px;">TRY OUT VISUAL EDITOR</button>
+                </div>
+                <div">
+                    <img src="file:///home/lokesh/Team-Indus/Img/img-3.png"  style="position:relative; left: 228px; bottom: -42.5px;"/>
+                </div>
+            </div>
+            <!--Starting of ANALYTICS-->
+        </div>
+
+        <div class="company-logos" style="margin-top: 30px;margin-left: 80px; display: flex;">
+            <div>
+                <img style = "height: 110px; width: 100px;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAARMAAAC3CAMAAAAGjUrGAAAAbFBMVEX///8AAADY2Ni/v78bGxvCwsJycnKMjIxpaWmPj4+jo6NNTU1KSkqqqqrS0tKnp6c/Pz+cnJzi4uLq6urs7Ow6OjrMzMwmJia5ublERESzs7OWlpaFhYVeXl7b29v4+PgxMTERERFXV1d7e3vSnnkZAAADxklEQVR4nO3b2WKiMBSAYYGKuOGGCGql1fd/x9Eq9ABZdEYRnf+7quQkkSNNQtBOBwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAM/lmEytESdf/ji6rtFZvf+NLraJk9cwnu3QGlFExtc0uqr3//G+OXGcUXRFo/Nq9zttaHMpqDGe53X/O7m1vdFttfttG3PimuysEVKcWRvdVbvfaUObTAKAu3A+9L73togqZ2Np1All57Eh8Am5yBlnklvm4ovMUuUgO/cNgc9IxsW9czKwVbm282ck44q35aTWiJqVrYr323fS0pwknkFsjahJbFXEwiO0tQPgJSXpsDBV3mysZYS8cfFHvwXDdKypUlhebouypaIwbdM4MpFjfqiKGOgiRqX5YiJKZsoZ5XL/PFYWyurPVnqHt+VkqJtrNTkZngtTZaG8zJ7tH66T8snJbSN1Tpyf3aeFuqxN14k7GxRmC1VEqItYD4SZrooI2VU7FGXsmwCvrxv4haC2vX7iiQidz+iqKofjokYt6DZytte5cd7ROJSrlOadQE5Oc01Bq+adG9cnastKlVJOYvH3bKMpeOX1iVLtMV8pJ3OxtluJx3+fpedebbpO4m2vsFWOJzJCaZsZG41CZQPbcCGjYlXXAF5K3OsXNOOJiFDq1ccT2ejxFmmrqNTpzMXhXpvGk8fPO8e7u6Bexz/eKbZ13rnL+mRaqVLNSVyvElZy8m7rk9r3S6o5UTz46bT4OvE+g8Jn7Wsi1Qidffl+J5GNngapQbXCKQU7GeWpugbwUtzJuDBR7seWIuS4kYiC8UBWCUXJ4KdKNhjL4J8VzUI23Kb92Mfv25/P9lseOi9oWjvvPP75jls/dE7Au6xP/uI54DknkTx0/g9s7XWSTEeFpfp5sS7CT38LRlP5QY9llcuiJyiOpMH5iLsU1dv0vBjAbbyuQWyNqEl0Vbx8dyW6lHpR5UA5/BnJuHBM7vq9x3xYzvID+VsIleFPyEXOeIJ3/X5sMVVddpb8/PXb50T/PeoiJ93z62KX8d1z0tc36lb6LF62Lid4Oe5mUnsa8J/rH+bhl3Ln4pGa+z2g+LwXris2YDLt7wHnfrIPOmlTucgZR8zbfjc6Njcqf3zgOLvSK80YO4ln61E2bCgV5refu2XeSReWRuWt9Ld8PKbPydqb+ctO9anRw90pJ2nX2qjMSW8jXuhzkk3jaN31Ow0znunSGnGyCqobuNacuHKH0rA+cZf9w/7BGXg988geAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8O/+ANmVRQ6IePjZAAAAAElFTkSuQmCC"></div>
+            <div >
+                <img style = "height: 55px; width: 45px; padding-top: 30px;margin-left: 110px;" src="data:image/png;base64,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"></div>
+            <div >
+                <img style = "height: 110px; width: 100px; margin-left: 110px;" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqEVvem3szoA4l-WE9mngTE_BnHXikEF15yg&usqp=CAU"></div>
+            <div >
+                <img style = "height: 60px; width: 100px; padding-top: 20px;margin-left: 110px;" src="data:image/png;base64,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">
+            </div>
+            <div>
+                <img style = "height: 110px; width: 100px; margin-left: 110px;" src="data:image/png;base64,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">
+            </div>
+            <div >
+                <img style = "height: 80px; width: 70px; padding-top: 20px; margin-left: 110px;" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThMOEnQF2c3jkYh4ncqAcZtWBgzvBGRTGl-g&usqp=CAU"> 
+            </div>
+        </div>
+
+        <div style="margin-top: 7%;">
+            <h1 style="text-align: center; padding-left: 13%; padding-right: 10%;">Join more then 20 of the top Fortune 100 global businesses who depend on Optimizely every day to make smarter decision</h1>
+        </div>
+
+        <div style="margin-top: 7%;" class="twoFlotingbox">
+            <div style="margin-left: 30%;  ">
+                <button style="color: #0037ff; border-bottom: 2px solid #0037ff;" id="btn6" onclick="print6()">MARKETING & GROWTH</button></div>
+            <div>
+                <button id="btn7" onclick="print7()">PRODUCT & ENGINEERING</button></div>
+        </div>
+
+
+        <div style="margin-top: 7%; display: flex;">
+            <div style="height: 300px; box-shadow: 2px 2px 2px 2px #acd6e7; width: 320px; float: left; margin-left: 40px;  padding-left: 30px; padding-right: 10px;">
+                <h5>HP: an Experimentation <br>Center of Excellence</h5>
+                <p>HP knows that increasing the pace of innovation for their campaigns 
+                    will be essential to ensuring peak performance for various digital business units that have started 
+                    doing experimentation.</p>
+            </div>
+            <div style="height: 300px; width: 320px; box-shadow: 2px 2px 2px 2px #acd6e7; float: left; margin-left: 30px; padding-left: 30px;padding-right: 10px;">
+                <h5>Driving the fast-growing <br> UK fashion brand forward</h5>
+                <p>Its innovative way of running the company as well as its ambitious digital strategy allowed Missguided 
+                    to obtain a competitive advantage over other fashion retailers in a very short time.</p>
+            </div>
+            <div style="height: 300px; width: 320px; box-shadow: 2px 2px 2px 2px #acd6e7; float: left; margin-left: 40px;padding-left: 30px;padding-right: 10px;">
+                <h5>Brooks Running Decreases Return Rate</h5>
+                <p>For retailers, optimization is not just about increasing conversion rate or average order value. In fact,
+                     many retailers have realized that optimizing for more than conversion rate and AOV is essential to 
+                     their business.</p>
+            </div>
+        </div>
+
+        <div style="background-color: black; height: 540px; margin-top: 10%; padding-left: 10%; color: white;">
+            <!-- <div>
+                <p style="float: right; margin-right: 10px;">Language</a>
+            </div> -->
+            <div style="display: grid;grid-template-columns: auto auto auto auto auto auto; padding-top: 5%; grid-gap: 20px;">
+                <div  style="border-top: 2px solid #2e3c4d; width: 200px">
+                    <h3 >Platform Features & Benefits</h3>
+                    <div style="display: grid; grid-template-rows: auto auto auto auto auto auto auto; grid-gap: 10px;">
+                        <a href="#">Platform</a>
+                    <a href="#">Plans</a>
+                    <a href="#">Developers</a>
+                    <a href="#">Feature Flags</a>
+                    <a href="#" href="#">Digital Experience Platform</a>
+                    <a href="#">Content Intelligence</a>
+                    <a href="#">B2B eCommerce</a>
+                    </div>
+                </div>
+                <div  style="border-top: 2px solid #2e3c4d; width: 150px">
+                    <h3>Solutions</h3>
+                    <div style="display: grid; grid-template-rows: auto auto auto auto auto auto auto auto auto; grid-gap: 10px;">
+                        <a href="#">Marketing</a>
+                    <a href="#">Product</a>
+                    <a href="#">Engineering</a>
+                    <a href="#">Data</a>
+                    <a href="#" >Retail</a>
+                    <a href="#">Travel</a>
+                    <a href="#">High Tech</a>
+                    <a href="#">Finance</a>
+                    <a href="#">Media</a>
+                    </div>
+                </div>
+                <div  style="border-top: 2px solid #2e3c4d; width: 150px">
+                    <h3>Customer</h3>
+                    <div style="display: grid; grid-template-rows: auto auto auto auto auto auto auto; grid-gap: 10px;">
+                        <a href="#">Case Studies</a>
+                        <a href="#">Solutions Partners</a>
+                        <a href="#">Technology Partners</a>
+                    </div>
+                    
+                </div>
+                <div  style="border-top: 2px solid #2e3c4d; width: 150px">
+                    <h3>Resources</h3>
+                    <div style="display: grid; grid-template-rows: auto auto auto auto auto ; grid-gap: 10px;">
+                    <a href="#">Resource Library</a>
+                    <a href="#">Blog</a>
+                    <a href="#">Optimization Glossary</a>
+                    <a href="#">Sample Size Calculator</a>
+                    <a href="#">Events</a>
+                    </div>
+                </div>
+                <div  style="border-top: 2px solid #2e3c4d; width: 150px">
+                    <h3>About</h3>
+                    <div style="display: grid; grid-template-rows: auto auto auto auto auto auto auto; grid-gap: 10px;">
+                    <a href="#">About</a>
+                    <a href="#">Careers</a>
+                    <a href="#">Press</a>
+                    <a href="#">Nonprofits</a>
+                    <a href="#">Contact</a>
+                    </div>
+                </div>
+                <div  style="border-top: 2px solid #2e3c4d; width: 150px">
+                    <h3>Other</h3>
+                    <div style="display: grid; grid-template-rows: auto auto auto auto auto auto ; grid-gap: 10px;">
+                    <a href="#">Platform Status</a>
+                    <a href="#">G.R.O.W with Optimizely</a>
+                    <a href="#">Global Services</a>
+                    <a href="#">Customer Success</a>
+                    <a href="#">Knowledge Base</a>
+                    <a href="#" >Academy</a>
+                    </div>
+                </div>
+            </div>
+            <div style="display: grid; grid-template-columns: auto auto; margin-top: 5%;">
+                <div style="display:grid; grid-template-columns: auto auto auto auto auto auto auto; font-size: 12px;">
+                    <div>Terms of Service</div>
+                    <div>Trademark Policy</div>
+                    <div>Privacy Policy</div>
+                    <div>Security</div>
+                    <div>Compliance</div>
+                    <div>Do Not Sell</div>
+                    <div>CA Privacy Rights</div>
+                </div>
+                <div style="display: grid; grid-template-columns: auto auto auto auto auto; margin-left: 120px; padding-right: 70px;">
+                    <div>1</div>
+                    <div>2</div>
+                    <div>3</div>
+                    <div>4</div>
+                    <div>5</div>
+                </div>
+            </div>
+            <div style="margin-top: 2%;font-size: 12px;"><p>@ 2021 Optimizely, Inc. All Rights Reserved.</a></div>
+        </div>
+        <script>
+            function print7(){
+                document.getElementById('btn7').style.borderBottom ="2px solid #0037ff";
+                document.getElementById('btn7').style.color = "#0037ff";
+                document.getElementById('btn6').style.color = "black";
+                document.getElementById('btn6').style.borderBottom = "none";
+
+            }
+            function print6(){
+                document.getElementById('btn6').style.borderBottom = "2px solid #0037ff";
+                document.getElementById('btn6').style.color = "#0037ff";
+                document.getElementById('btn7').style.color = "black";
+                document.getElementById('btn7').style.borderBottom = "none";
+
+            }
+            function print1(){
+                var data = document.getElementById('tab1');
+                document.getElementById('tab2').style.display = "none";
+                document.getElementById('tab3').style.display = "none";
+                document.getElementById('tab4').style.display = "none";
+                document.getElementById('tab5').style.display = "none";
+                data.style.display = "block";
+                document.getElementById('btn1').style.color = "#0037ff";
+                document.getElementById('btn2').style.color = "#2e3436";
+                document.getElementById('btn3').style.color = "#2e3436";
+                document.getElementById('btn4').style.color = "#2e3436";
+                document.getElementById('btn5').style.color = "#2e3436";
+                document.getElementById('btn1').style.borderBottom = "2px solid #0037ff"
+                document.getElementById('btn2').style.borderBottom = "none"
+                document.getElementById('btn3').style.borderBottom = "none"
+                document.getElementById('btn4').style.borderBottom = "none"
+                document.getElementById('btn5').style.borderBottom = "none"
+
+            }
+            function print2(){
+                var data = document.getElementById('tab2');
+                document.getElementById('tab1').style.display = "none";
+                document.getElementById('tab3').style.display = "none";
+                document.getElementById('tab4').style.display = "none";
+                document.getElementById('tab5').style.display = "none";
+                data.style.display = "block";
+                document.getElementById('btn2').style.color = "#0037ff";
+                document.getElementById('btn1').style.color = "#2e3436";
+                document.getElementById('btn3').style.color = "#2e3436";
+                document.getElementById('btn4').style.color = "#2e3436";
+                document.getElementById('btn5').style.color = "#2e3436";
+                document.getElementById('btn2').style.borderBottom = "2px solid #0037ff"
+                document.getElementById('btn1').style.borderBottom = "none"
+                document.getElementById('btn3').style.borderBottom = "none"
+                document.getElementById('btn4').style.borderBottom = "none"
+                document.getElementById('btn5').style.borderBottom = "none"
+            }
+            function print3(){
+                var data = document.getElementById('tab3');
+                document.getElementById('tab1').style.display = "none";
+                document.getElementById('tab2').style.display = "none";
+                document.getElementById('tab4').style.display = "none";
+                document.getElementById('tab5').style.display = "none";
+                data.style.display = "block";
+                document.getElementById('btn3').style.color = "#0037ff";
+                document.getElementById('btn1').style.color = "#2e3436";
+                document.getElementById('btn2').style.color = "#2e3436";
+                document.getElementById('btn4').style.color = "#2e3436";
+                document.getElementById('btn5').style.color = "#2e3436";
+                document.getElementById('btn3').style.borderBottom = "2px solid #0037ff"
+                document.getElementById('btn2').style.borderBottom = "none"
+                document.getElementById('btn1').style.borderBottom = "none"
+                document.getElementById('btn4').style.borderBottom = "none"
+                document.getElementById('btn5').style.borderBottom = "none"
+            }
+            function print4(){
+                var data = document.getElementById('tab4');
+                document.getElementById('tab1').style.display = "none";
+                document.getElementById('tab2').style.display = "none";
+                document.getElementById('tab3').style.display = "none";
+                document.getElementById('tab5').style.display = "none";
+                data.style.display = "block";
+                document.getElementById('btn4').style.color = "#0037ff";
+                document.getElementById('btn1').style.color = "#2e3436";
+                document.getElementById('btn3').style.color = "#2e3436";
+                document.getElementById('btn2').style.color = "#2e3436";
+                document.getElementById('btn5').style.color = "#2e3436";
+                document.getElementById('btn4').style.borderBottom = "2px solid #0037ff"
+                document.getElementById('btn2').style.borderBottom = "none"
+                document.getElementById('btn3').style.borderBottom = "none"
+                document.getElementById('btn1').style.borderBottom = "none"
+                document.getElementById('btn5').style.borderBottom = "none"
+            }
+            function print5(){
+                var data = document.getElementById('tab5');
+                document.getElementById('tab1').style.display = "none";
+                document.getElementById('tab2').style.display = "none";
+                document.getElementById('tab4').style.display = "none";
+                document.getElementById('tab3').style.display = "none";
+                data.style.display = "block";
+                document.getElementById('btn5').style.color = "#0037ff";
+                document.getElementById('btn1').style.color = "#2e3436";
+                document.getElementById('btn3').style.color = "#2e3436";
+                document.getElementById('btn4').style.color = "#2e3436";
+                document.getElementById('btn2').style.color = "#2e3436";
+                document.getElementById('btn5').style.borderBottom = "2px solid #0037ff"
+                document.getElementById('btn2').style.borderBottom = "none"
+                document.getElementById('btn3').style.borderBottom = "none"
+                document.getElementById('btn4').style.borderBottom = "none"
+                document.getElementById('btn1').style.borderBottom = "none"
+            }
+        </script>
+    </body>
+</html>
