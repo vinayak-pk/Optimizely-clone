@@ -390,8 +390,18 @@
         </div>
         <script>
             function print7(){
-                document.getElementById('btn7').style.borderBottom ="2px solid #0037ff;"
-                document.getElementById('btn8').style.color = "none"
+                document.getElementById('btn7').style.borderBottom ="2px solid #0037ff";
+                document.getElementById('btn7').style.color = "#0037ff";
+                document.getElementById('btn6').style.color = "black";
+                document.getElementById('btn6').style.borderBottom = "none";
+
+            }
+            function print6(){
+                document.getElementById('btn6').style.borderBottom = "2px solid #0037ff";
+                document.getElementById('btn6').style.color = "#0037ff";
+                document.getElementById('btn7').style.color = "black";
+                document.getElementById('btn7').style.borderBottom = "none";
+
             }
             function print1(){
                 var data = document.getElementById('tab1');
