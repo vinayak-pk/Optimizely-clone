@@ -4,11 +4,13 @@
 
     </head>
     <style>
+        
 
         body {
         
         background-color: rgb(230, 225, 225);
         text-align: center;
+        padding: 5%;
             }
         body > div:nth-child(1) {
             margin-top: 10%;
@@ -162,6 +164,23 @@
                     flex-basis: 50% 19% 19% 19%;
                     border: blue 1px solid;
                     }
+                #bottom_box {
+            
+                    flex-direction: row;
+                    display: flex;
+                    width: 100%;
+                    height: 400px;
+                    background-color: white;
+                    background-image: url(images.ctfassets.net/zw48pl1isxmc/71oWl5R0uc6XKZICd6n7SN/2e589bbd50c7b476734ddfe601f7054e/SFDC-DnA.png);
+                    
+                    
+                }    
+                #bottom_box > div {
+                    padding: 10%;
+                    width: 45%;
+                    text-align: left;
+                    
+                }
     </style>
     <body>
         <div><h1>Deliver better code, apps, and growth. Faster.</h1><p>Ship quickly and confidently with feature flagging. Ship intelligently with A/B testing. Implement successfully with the world’s largest team of experts.</p></div>
@@ -249,11 +268,11 @@
 
             </div>
            
-            
+            <div>
                 <button type="button" class="collapsible">Results</button>
                 <div class="content">
                 <p></p>
-                </div>
+            </div>
 
             </div>
 
@@ -316,26 +335,13 @@
                 </div>
 
             </div>
-           
+           <div id="bottom_box">
+                <div><h5>Now Available</h5><h1>Optimizely Data and Attribution for Salesforce</h1><p>Improve customer experience, send events between Salesforce and Optimizely to track the down funnel metrics influenced by your experiments.
+
+                </p></div>
+                <div></div>
+           </div>
         </div>    
     </body>
-    <script>
-        
-        var coll = document.getElementsByClassName("collapsible");
-        
-
-        for (var i = 0; i < coll.length; i++) {
-        coll[i].addEventListener("click", function() {
-            this.classList.toggle("active");
-            var content = this.nextElementSibling;
-            if (content.style.display === "block") {
-            content.style.display = "none";
-            } else {
-            content.style.display = "block";
-            }
-        });
-}
-
-
-    </script>
+    
 </html>
